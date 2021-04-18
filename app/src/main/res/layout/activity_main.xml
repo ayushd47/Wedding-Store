@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logodark"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etemail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Email"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+            android:backgroundTint="#A0ECE4"
+            android:drawableLeft="@drawable/email"
+            android:fontFamily="monospace"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="0dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etpassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:backgroundTint="#A0ECE4"
+            android:drawableLeft="@drawable/lock"
+            android:fontFamily="monospace"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundedbutton"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="#F1655B"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="monospace"
+        />
+
+    <TextView
+        android:id="@+id/tvda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Dont have an account?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="monospace"
+        />
+    <TextView
+        android:id="@+id/tvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:text="Signup"
+        android:textSize="25sp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="monospace"
+        android:clickable="true"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
