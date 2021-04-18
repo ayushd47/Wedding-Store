@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#465FE1">
 
     <ImageView
         android:id="@+id/imgPet"
@@ -20,14 +21,14 @@
         android:backgroundTint="@color/white"/>
 
     <TextView
-        android:id="@+id/tvPetName"
+        android:id="@+id/tvShopName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
         android:text="Pet name"
         android:textColor="@color/black"
-        android:textSize="75px"
+        android:textSize="65px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +45,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPetName" />
+        app:layout_constraintTop_toBottomOf="@+id/tvShopName" />
 
     <TextView
         android:id="@+id/tvPetGender"

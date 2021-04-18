@@ -1,7 +1,6 @@
 package com.safall.adoptdont_shop.adapter
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,8 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.safall.adoptdont_shop.R
 import com.safall.adoptdont_shop.entity.Pet
-import com.safall.adoptdont_shop.entity.Product
-import com.safall.adoptdont_shop.repository.CartRepository
 import com.safall.adoptdont_shop.repository.FavRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -27,7 +24,7 @@ class SinglePetAdapter (
         private val context: Context,
 ): RecyclerView.Adapter<SinglePetAdapter.SinglePetViewHolder>() {
     class SinglePetViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val tvPetName: TextView = view.findViewById(R.id.tvPetName)
+        val tvPetName: TextView = view.findViewById(R.id.tvShopName)
         val tvPetSpecies: TextView = view.findViewById(R.id.tvPetSpecies)
         val tvPetGender: TextView = view.findViewById(R.id.tvPetGender)
         val tvPetBd: TextView = view.findViewById(R.id.tvPetBd)
@@ -47,7 +44,7 @@ class SinglePetAdapter (
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SinglePetViewHolder {
         val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.custom_single_pet_layout, parent, false)
+                .inflate(R.layout.custom_single_shop_layout, parent, false)
         return SinglePetViewHolder(view)
     }
 

@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
     android:orientation="vertical"
+    android:background="#465FE1"
     >
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:foregroundGravity="center"
-        android:src="@drawable/logodark">
+        android:src="@drawable/weblogo">
 
     </ImageView>
 

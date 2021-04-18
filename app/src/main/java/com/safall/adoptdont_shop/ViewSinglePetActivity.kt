@@ -3,7 +3,6 @@ package com.safall.adoptdont_shop
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,7 +18,7 @@ class ViewSinglePetActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         getSupportActionBar()?.hide();
-        setContentView(R.layout.activity_view_single_pet)
+        setContentView(R.layout.activity_view_single_shop)
 
         recyclerView = findViewById(R.id.singlepetRecycler)
         loadSinglePet()

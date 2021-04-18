@@ -9,7 +9,7 @@
         android:id="@+id/navigation_pets"
         android:name="com.safall.adoptdont_shop.fragments.PetsFragment"
         android:label="Pets"
-        tools:layout="@layout/fragment_pets" />
+        tools:layout="@layout/fragment_shops" />
 
     <fragment
         android:id="@+id/navigation_products"

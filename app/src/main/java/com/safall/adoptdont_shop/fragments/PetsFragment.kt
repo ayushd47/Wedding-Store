@@ -1,33 +1,21 @@
 package com.safall.adoptdont_shop.fragments
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.safall.adoptdont_shop.DashboardActivity
 import com.safall.adoptdont_shop.FavoriteActivity
 import com.safall.adoptdont_shop.R
-import com.safall.adoptdont_shop.ViewSinglePetActivity
 import com.safall.adoptdont_shop.adapter.PetAdapter
-import com.safall.adoptdont_shop.adapter.ProductAdapter
 import com.safall.adoptdont_shop.db.PetDB
-import com.safall.adoptdont_shop.db.ProductDB
 import com.safall.adoptdont_shop.repository.PetRepository
-import com.safall.adoptdont_shop.repository.ProductRepository
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 
 class PetsFragment : Fragment() {
@@ -47,7 +35,7 @@ class PetsFragment : Fragment() {
         val viewModelFactory = PetViewModelFactory(repository)
         petViewModel = ViewModelProvider(this,viewModelFactory).get(PetViewModel::class.java)
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_pets, container, false)
+        val view = inflater.inflate(R.layout.fragment_shops, container, false)
         btnFav = view.findViewById(R.id.btnFav)
         recyclerView = view.findViewById(R.id.petRecycler)
 

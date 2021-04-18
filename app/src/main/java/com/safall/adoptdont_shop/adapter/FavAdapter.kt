@@ -32,7 +32,7 @@ class FavAdapter (
 
         init {
             petImg=view.findViewById(R.id.imgPet)
-            petName=view.findViewById(R.id.tvPetName)
+            petName=view.findViewById(R.id.tvShopName)
             delete = view.findViewById(R.id.ibDelete)
         }
 
